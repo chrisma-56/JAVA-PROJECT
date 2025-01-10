@@ -66,7 +66,7 @@ public class Quiz111 {
             }
         });
     }
-
+    // compares the username and password form tables present in the database
     private static boolean authenticate(String username, String password) {
         String url = "jdbc:mysql://localhost:3306/quiz_login";
         String dbUser = "root";
@@ -85,7 +85,7 @@ public class Quiz111 {
         }
         return false;
     }
-
+    //page after loggin in that displays the question
     private static void showQuiz(String username) {
         JFrame quizFrame = new JFrame("Quiz");
         quizFrame.setSize(1200, 600);
